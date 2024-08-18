@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balanced Diet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #F1F8E8; /* Background color for the body */
+      }
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+      header {
+        background: #55AD9B; /* Header background color */
+        color: #fff;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header h1 {
+        margin: 0;
+        text-align: left;
+        flex: 1;
+      }
+      nav#navbar {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+      }
+      nav#navbar a {
+        color: #fff;
+        text-decoration: none;
+      }
+      button.menu-toggle {
+        display: none;
+      }
+      footer {
+        background: #55AD9B; /* Footer background color */
+        padding: 1rem 0;
+        text-align: center;
+      }
+      .social-links a {
+        margin: 0 0.5rem;
+        color: #333;
+        text-decoration: none;
+      }
+      #back-to-top {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        background: #55AD9B; /* Back-to-top button background color */
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+      #back-to-top i {
+        font-size: 1.5rem;
+      }
+
+      /* Main Page Specific Styles */
+      main {
+        display: flex;
+        gap: 2rem;
+      }
+      .main-content {
+        flex: 2;
+      }
+      .recent-posts {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .recent-posts article {
+        background-color: #ffffff; /* Background color for articles */
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .recent-posts article:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+      .recent-posts h3 {
+        margin-top: 0;
+      }
+      .recent-posts img {
+        width: 100%;
+        border-radius: 5px;
+      }
+      .recent-posts button a {
+        text-decoration: none;
+        color: #55AD9B; /* Color for Read More link */
+      }
+      .recent-posts button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
+      .recent-posts ul {
+        list-style: none;
+        padding: 0;
+      }
+      .recent-posts li {
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Balanced Diet</h1>
+        <nav id="navbar">
+          <a href="#home"><i class="fas fa-home"></i> Home</a>
+          <a href="about.html"><i class="fas fa-apple-alt"></i> About</a>
+          <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="main-content">
+          <article>
+            <h2>Top Tips for a Balanced Diet</h2>
+            <p>
+              Eating a balanced diet is crucial for maintaining good health. Learn how to incorporate more fruits, vegetables, and whole grains into your meals while reducing your intake of processed foods.
+            </p>
+            <p>
+              A balanced diet can help manage weight, improve mood, and increase energy levels. Discover simple tips to make healthy eating a part of your daily routine and how to create nutritious meal plans that work for you.
+            </p>
+            <p>
+              Regular physical activity, along with a well-balanced diet, can lead to a healthier lifestyle. Consult with nutrition experts to customize a diet plan that suits your needs and goals.
+            </p>
+            <img src="images (1).jpeg.jpg" alt="Healthy Eating" />
+          </article>
+          <article>
+            <h2>Delicious Dinner Diets</h2>
+            <p>
+              Discover healthy and flavorful dinner ideas that are perfect for any diet. Whether you're aiming for weight loss or just want to eat better, these dinner recipes will satisfy your taste buds and keep you on track.
+            </p>
+            <p>
+              Dinner can be a challenging meal to plan, especially if you're trying to balance taste and nutrition. Explore a variety of recipes that are both nutritious and satisfying, helping you achieve your dietary goals without sacrificing flavor.
+            </p>
+            <p>
+              From quick weeknight dinners to more elaborate weekend meals, find inspiration and tips for creating meals that are not only good for you but also enjoyable to eat.
+            </p>
+            <img src="images (4).jpeg.jpg" alt="Dinner Diet" />
+          </article>
+        </section>
+        <aside class="recent-posts">
+          <article>
+            <h3>Healthy Breakfast Ideas</h3>
+            <p class="meta">by Nutrition Expert | August 17, 2024</p>
+            <img src="images (2).jpeg.jpg" alt="Healthy Breakfast" />
+            <p>
+              Start your day with these nutritious and easy-to-make breakfast recipes that will keep you energized throughout the morning.
+            </p>
+            <button>
+              <a href="https://www.loveandlemons.com/healthy-breakfast-ideas/">
+                <i class="fas fa-chevron-right"></i> Read More
+              </a>
+            </button>
+          </article>
+          <article>
+            <h3>Meal Planning for Weight Loss</h3>
+            <p class="meta">by Nutrition Expert | August 16, 2024</p>
+            <img src="images (3).jpeg.jpg" alt="Meal Planning" />
+            <p>
+              Learn how to create a sustainable meal plan to help you achieve your weight loss goals without sacrificing flavor or satisfaction.
+            </p>
+            <button>
+              <a href="https://www.eatingwell.com/category/4305/weight-loss-meal-plans/">
+                <i class="fas fa-chevron-right"></i> Read More
+              </a>
+            </button>
+          </article>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <div class="container" id="contact">
+        <p>Contact us at: info@foodmanagement.com</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Food Management. All rights reserved.</p>
+      </div>
+    </footer>
+    <button id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="scripts.js"></script>
+  </body>
+</html>
